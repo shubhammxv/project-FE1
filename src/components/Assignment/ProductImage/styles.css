@@ -1,0 +1,106 @@
+.product-nav {
+  display: none;
+  margin: 32px 16px 16px 24px;
+}
+
+.product-nav > i {
+  margin: 0 8px;
+}
+
+.product-nav > span:nth-child(-n+3) {
+  color: grey;
+}
+
+.product-overview {
+  position: sticky;
+  top: 54px;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+
+.product-image {
+  width: 320px;
+  height: 320px;
+  border: 1px solid;
+}
+
+.change-view {
+  border: 1px solid #0088ff;
+  border-radius: 16px;
+  padding: 8px 24px;
+  color: #0088ff;
+  margin: 2vh;
+}
+
+.images-carousel {
+  display: flex;
+  align-items: center;
+}
+
+.images-carousel > i {
+  font-size: 1.6rem;
+}
+
+.images-carousel > div {
+  width: 16vw;
+  max-width: 100px;
+  border-radius: 2px;
+  height: 80px;
+  border: 1px solid;
+  margin: 0px 8px;
+}
+
+.user-actions {
+  width: 60%;
+  border: 2px solid #0088ff;
+  border-radius: 4px;
+  height: 40px;
+  margin: 4vh 0;
+}
+
+.user-actions > button {
+  border: none;
+  height: 100%;
+  width: 50%;
+  font-size: 1rem;
+  outline: none;
+}
+
+.add-btn {
+  color: #0088ff;
+  background: white;
+}
+
+.buy-btn {
+  color: white;
+  background: #0088ff;
+}
+
+@media (min-width: 801px) {
+  .product-nav {
+    display: block;
+  }
+  .images-carousel > div {
+    width: 8vw;
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 667px) {
+
+  .product-image {
+    position: relative;
+    width: 180px;
+    height: 180px;
+  }
+  .user-actions {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    margin-bottom: 0;
+    z-index: 100;
+  }
+}

@@ -1,0 +1,30 @@
+.details {
+  flex: 4;
+  padding: 0 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #0088ff;
+}
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background: white;
+  z-index: 100;
+}
+
+.main-container {
+  margin-top: 64px;
+}
+
+@media (min-width: 801px){
+  .main-container {
+    display: flex;
+  }
+  .details {
+    margin-top: 32px;
+  }
+}

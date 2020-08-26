@@ -1,0 +1,35 @@
+.offers-container {
+  border: 1px solid grey;
+  border-radius: 2px;
+  margin: 20px 0;
+}
+
+.offer-heading {
+  border-bottom: 1px solid grey;
+  padding: 6px 12px;
+  font-weight: bold;
+}
+
+.offers {
+  padding: 12px;
+  color: grey;
+  font-size: 14px;
+}
+
+.offer:nth-child(even) {
+  margin: 16px 0px;
+}
+
+.offer a, .offers a {
+  text-decoration: none;
+}
+
+.offer a {
+  margin-left: 8px;
+}
+
+@media (min-width: 801px){
+  .offers-container {
+    width: fit-content;
+  }
+}
